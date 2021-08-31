@@ -1,0 +1,7 @@
+<h3>  Parent Component</h3> 
+<label> Enter the Id</label>
+<input  type="text" #pcomponent  (keyup)="onchange(pcomponent.value)"> 
+
+<p> The value of Child Component is:{{cData}}</p>
+
+<app-child [pData]="pcomponent.value" (childEvent)="cData=$event"></app-child>

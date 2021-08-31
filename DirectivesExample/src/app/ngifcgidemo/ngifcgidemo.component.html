@@ -1,0 +1,40 @@
+ <!-- <h2> ngIf  examples</h2>
+<button type="submit" (click)="isvalidchange()">Show and hide data</button>
+<p> isvalid :{{isvalid}}</p>
+<div *ngIf="isvalid"> Data is available</div>
+
+<div *ngIf="!isvalid"> Data not available</div> -->
+<!--
+<div *ngFor="let id of eids">
+    <!-- Employee id is {{id}} -->
+   <!-- <div *ngIf="id%2==0">
+        <div [ngClass]="'even'"> Even id</div>
+    </div>
+    <div *ngIf="id%2!=0">
+        <div [ngClass]="'odd'"> odd id</div>
+    </div>
+</div> -->
+
+
+<!-- <h2>Female Employees</h2>
+
+<div *ngFor="let emp of employees">      
+       
+        <ul *ngIf="emp.gender=='female'">            
+        <li> {{emp.name}}</li>
+        <li>{{emp.gender}}</li>
+        <li> {{emp.salary}}</li>
+    
+        </ul>
+    </div>
+ -->
+<!-- Example 3-->
+<button (click)="toggle()"> {{buttoncontent}}</button>
+<div *ngIf="show">
+    <div>
+        <label> Enter the name</label>
+        <input type="text">
+        <br/>
+        <input type="submit" value="submit">
+    </div>
+</div>

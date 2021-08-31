@@ -1,0 +1,58 @@
+<p>ngfordemo works!</p>
+<div class="container">
+    <table class="table">        
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <td>Email</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of Employees;
+         let o=odd; let e1 =even; let first=first; let last=last" 
+         [ngClass]="{odd : o, even: e1,first:first,last:last}">
+            <!-- <tr *ngFor="let movie of movies; let i=index; let o= odd; let e=even;"
+[ngClass]="{ odd: o, even: e }"> -->
+            
+            <td>{{e.id}}</td>
+            <td> {{e.name}}</td>
+             <td> {{e.email}}</td> 
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<!-- <div class='card'>
+    <div class='card-header'>
+      <p>Nested Array</p>
+    </div>
+   
+    <div class='table-responsive'>
+      <table class='table table-bordered table-sm '>
+        <thead class="thead-dark">
+          <tr>
+            <th>Name</th>
+            <th>Mail ID</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees;">
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+            <td>
+              <table class='table table-sm '>
+                <tbody>
+                  <tr *ngFor="let skill of employee.skills;">
+                    <td>{{skill.skill}}</td>
+                    <td>{{skill.exp}}</td>
+                  </tr>
+                </tbody>
+              </table>
+   
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->
+  

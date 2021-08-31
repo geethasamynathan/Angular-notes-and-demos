@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgifdemoComponent implements OnInit {
   title: string = 'ngIf Example' ;
-  showMe=true;
+  showMe=false;
   showActions: boolean = false;  
   contacts=[
     {name: "test1", email:"test1@test1.com"},

@@ -1,0 +1,17 @@
+<p>eventbinding works!</p>
+<h2> {{title}}</h2>
+
+<button (click)="onSave()"> Save</button>
+
+<p> you have clicked {{clickcount}}</p>
+
+<input (keyup)="value1 =$any ($event.target).value" value={{value1}}/>
+
+<p> {{value1}}</p>
+
+<input (keyup.enter)="value2=$any($event.target).value"
+ (keyup.escape)="$any($event.target).value2=''; value2=''">
+<p> you have enetered {{value2}}</p>
+
+<!-- <input (keyup.enter)="value2=$any($event.target).value">
+<p> you have enetered {{value2}}</p> -->

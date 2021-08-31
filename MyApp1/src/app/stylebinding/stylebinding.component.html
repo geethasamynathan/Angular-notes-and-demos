@@ -1,0 +1,19 @@
+<p>stylebinding works!</p>
+
+<p [style.color]="'red'"> Give a me red</p>
+
+<p [style.background-color]="'grey'"> Sample paragrapgh with Grey Background</p>
+
+<p [style.border]="'2px solid blue'"> I am paragraph with Border style </p>
+
+<li> {{status =='error'}}</li>
+<button [style.color]="status=='error' ?'red': 'blue'"> Click Me</button>
+<br/> <br/>
+<button [style.color]="getcolor()" > Button 2</button>
+<button [style.fontSize.px]="'20'"> Button 3</button>
+
+<h2> [ngStyle] directive</h2>
+<p [ngStyle]="{'font-size':'10px','color':'green','border':'2px dotted red'}"> 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam, excepturi perspiciatis fuga ab reiciendis sint facere repudiandae voluptate veniam eligendi autem, distinctio, sed possimus aspernatur maiores voluptatibus quos voluptatum?
+</p>
+

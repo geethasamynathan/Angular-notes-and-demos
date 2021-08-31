@@ -1,0 +1,8 @@
+<p>twowaybinding works!</p>
+
+<input type="text" name="value1" [(ngModel)]="value">
+<p> you have entered {{value}}</p>
+
+<input type="text" (keyup)="value=$any ($event.target).value" >
+<p> {{value}}</p>
+<button (click)="clearvalues()"> Reset </button>    

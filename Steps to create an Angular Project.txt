@@ -1,0 +1,77 @@
+ Angular Stpes:
+==============
+1. installing angular
+
+ npm install -g @angular/cli@next
+
+2. check the angular version
+ng --version
+
+ first create a folder in the desired path
+open that folder path command prompt
+3. create a new angular project
+
+ng new  MyApp1
+
+H:\CGI SW REquiremenrs\Angular Demos>cd MyApp1
+
+H:\CGI SW REquiremenrs\Angular Demos\MyApp1>code .
+
+it will open Myapp1 project in Visual studio code.
+
+
+4. execute or run angular project
+ng --serve -open
+ng -s o
+
+ng serve
+default port :4200
+
+
+goto app.component.html
+
+delete all content and write your own content.
+Ex: 
+ <h2> This is My Angular App</h2>
+<p> I am learnig SPA using Angular</p> 
+
+
+goto app.component.ts
+we have variable title if use want access the value of it in app.component.html. we use interpolation
+
+goto app.component.html
+<h2> Welcome to  {{title}}</h2>
+
+let us discuss about in detail about interpolation
+<h3>2+ 2= {{2+2}} </h3>
+<h3>2 * 4= {{2*4}} </h3>
+<h3> {{" 2 + 2 ="+2+2 }}</h3>
+<h3> {{"2+5 ="+(2+5)}}</h3>
+
+
+Create a new component:
+---------------------
+ng g c about
+
+ng g c about1 --skipTests=true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser

@@ -1,0 +1,38 @@
+<p>sample works!</p>
+
+<label> Enter the Name : </label>
+<input type="text" [value]="title"> <br>
+
+<button [disabled]="btnenable"> Click Me</button> <br/><br/><br/>
+<img src="assets/images/2.jpg">
+
+<h2 [style.color]="color">  image src using Property Binding</h2>
+<img [src]="imgpath"/>
+<h1 [innerText]="title"></h1>
+
+<p [innerText]="'Hello & Welcome to '+ ' Angular Data binding '"></p>
+<p [innerText]=" 3*5"></p>
+<p [innerHTML]="text1"> </p> 
+ <p [innerHTML]="text2"> </p>
+    <button [disabled]="isDisabled"> I am Disabled</button>
+    <button> X</button>
+    <table border="1">
+        <tr>
+            <td> col 1</td>
+            <td> col 2</td>
+
+        </tr>
+        <tr>
+            <td [attr.colspan]="getColspan()"> col 1</td>
+            <td> col 2</td>
+            
+        </tr>
+        <tr>
+            <td [colSpan]="getColspan()"> col 1</td>
+            <td> col 2</td>
+            
+        </tr>
+
+    </table>
+
+    <button [attr.aria-label]="closeLabel">X</button>

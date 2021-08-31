@@ -1,0 +1,15 @@
+<p>templateref works!</p>
+
+<!-- <input #myinput placeholder="enter your name">
+<button (click)="changeTitile(myinput)"> click Me</button> -->
+
+<form #myform="ngForm"  (ngSubmit)="onSubmit(myform)"> 
+    <label>Enter the Office mail</label>
+    <input ngModel #email="ngModel" type="email" name="email">
+
+    <label>Enter the Officewebsite</label>
+    <input ngModel #web="ngModel" type="url" name="web">
+<button type="submit"> Submit</button>
+
+</form>
+<p> {{email_address}}</p>

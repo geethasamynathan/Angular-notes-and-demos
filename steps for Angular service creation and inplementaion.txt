@@ -1,0 +1,44 @@
+1. ng new AngularServiceDemo
+
+2. ng g s student
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class StudentService {
+
+  getStudents():any[]{
+    return[
+      { Id:1,Name:'Chandana', Gender:'female'},
+      { Id:2,Name:'Dhivya sri', Gender:'female'},
+      { Id:3,Name:'Jayadeep', Gender:'male'},
+      { Id:4,Name:'Sruthi', gender:'female'}
+    ];
+  };
+
+  constructor() { }
+}
+
+3.  implement the student service in studelist component
+
+ng g c studentlist
+
+studentlist.component.ts
+
+import { Component, OnInit } from '@angular/core';
+import { StudentService } from '../student.service';
+@Component({
+  selector: 'app-studentlist',
+  templateUrl: './studentlist.component.html',
+  styleUrls: ['./studentlist.component.css'],
+  providers:[StudentService]
+})
+export class StudentlistComponent implements OnInit {
+students:any[];
+  constructor(private _studentsevice:StudentService) { 
+    this.students=_studentsevice.getStudents();
+  }
+
+  ngOnInit(): void {
+  }

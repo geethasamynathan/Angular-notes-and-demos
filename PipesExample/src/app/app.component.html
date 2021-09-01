@@ -1,0 +1,51 @@
+<table class="table">  
+  <thead>  
+      <tr>  
+          <th>Code</th>  
+          <th>Name</th>  
+          <th>Gender</th>  
+          <th>Annual Salary</th>  
+          <th>Date of Birth</th>  
+      </tr>  
+  </thead>  
+  <tbody>  
+      <tr *ngFor='let employee of employees'>  
+          <td>{{employee.code}}</td>  
+
+          <td>{{employee.name| employeeTitle:employee.gender}}</td>  
+
+          <td>{{employee.gender}}</td>  
+          <td>{{employee.annualSalary | currency :'INR':true:'1.2-3'}}</td>  
+          <td>{{employee.dateOfBirth | date:"fullDate" |uppercase}}</td>  
+      </tr>  
+      <tr *ngIf="!employees || employees.length==0">  
+          <td colspan="5">  
+              No employees to display  
+          </td>  
+      </tr>  
+  </tbody>  
+</table>   
+
+<!-- Example 2-->
+<!-- <div>    
+  Parameterizing a pipe using DatePipe <br>   
+  <p>---------------------------------------</p>  
+       Medium:-{{DOB | date:"medium"}}<br/>  
+     Short:-{{DOB | date:"short"}}<br/>  
+    Specific Date Format:-{{DOB | date:"dd/MM/yyyy"}}<br/>       
+  Short Time format:-{{DOB | date:"shortTime"}}<br/>  
+  Medium Time:-{{DOB | date:"mediumTime"}}<br/>  
+  Medium Date format:- {{DOB | date:"mediumDate"}}<br/>  
+ Full Date Format:- {{DOB | date:"fullDate"}}<br/>  
+  </div>   -->
+
+<!-- <h2> Prodcut Details</h2>
+<pre>{{product |json}}</pre>
+
+<h2> Products Details</h2>
+<pre><p> {{products |json}}</p></pre> -->
+
+<h2>  get a square using square pipe </h2>
+
+
+<p>square of 4 is : {{ 4 |squarepipe}}</p>

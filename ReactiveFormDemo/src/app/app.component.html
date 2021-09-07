@@ -1,0 +1,80 @@
+<!-- <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <p>
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" id="fname" formControlName="fname" />
+  </p>
+  <p>
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" id="lname" formControlName="lname"/>
+  </p>
+
+  <p>
+    <label for="fname">Email</label>
+    <input type="email" name="email" id="email" formControlName="email"/>
+  </p>
+
+  <p>
+    <label>Gender</label>
+    <input type="radio" name="gender"  formControlName="gender"/>Male
+    <input type="radio" name="gender"  formControlName="gender"/>Female
+  </p>
+  <p>
+    <label for="fname">isMarried</label>
+    <input type="checkbox" name="isMarried" id="isMarried" formControlName="isMarried"/>
+  </p>
+  <p>
+    <label for="country">Counrty</label>
+    <select id="country" name="country" formControlName="country">
+      <option value="1">India</option>
+      <option  value="2">France</option>
+      <option value="3">Japan </option>
+    </select>
+  </p>
+  <div formGroupName="address">
+    <div>
+      <label for="city"> City</label>
+      <input type="text" name="city" id="city" formControlName="city">
+     </div>
+     <div>
+      <label for="Pincode"> Zip Code</label>
+      <input type="number" name="pincode" id="pincode" formControlName="pincode">
+     </div>
+    </div>
+  <p> <button type="submit">Submit</button></p>
+  <div>
+    <button type="button" (click)="setDefault()">Default</button>
+  </div>
+  <div>
+    <button type="button" (click)="setValue()">SetValue</button>
+    <button type="button" (click)="setAddress()">Address</button>
+    <button type="button" (click)="setCountry()">Country</button>
+  </div>
+  <div>
+    <button type="button" (click)="patchName()">Name</button>
+    <button type="button" (click)="patchAddress()">Address</button>
+    <button type="button" (click)="reset()">Reset</button>
+  </div>
+
+  
+</form>
+<div style="float: right; width:50%;">
+ 
+  <h3>Form Status</h3>
+  <b>valid : </b>{{contactForm.valid}}
+  <b>invalid : </b>{{contactForm.invalid}}
+  <b>touched : </b>{{contactForm.touched}}
+  <b>untouched : </b>{{contactForm.untouched}}  
+  <b>dirty : </b>{{contactForm.dirty}}
+  <b>disabled : </b>{{contactForm.disabled}}
+  <b>enabled : </b>{{contactForm.enabled}}
+ 
+ 
+  <h3>Form Value</h3>
+  {{contactForm.value |json}}
+ 
+</div>
+
+
+<h2>  Form values are </h2>
+<p> {{contactForm.value |json}}</p> -->
+<app-formarraydemo></app-formarraydemo>
